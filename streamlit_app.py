@@ -7,8 +7,9 @@ Glucose	=st.number_input('feature_2',min_value=0,max_value=200)
 BloodPressure=st.number_input('feature_3',min_value=0,max_value=122)
 SkinThickness=st.number_input('feature_3',min_value=0,max_value=99)
 Insulin=st.number_input('feature_3',min_value=0,max_value=846)
-BMI=st.number_input('feature_3',min_value=0.0,max_value=67.1)
-DiabetesPedigreeFunction=st.number_input('feature_3',min_value=0.0,max_value=2.42)
+BMI=st.number_input('feature_3',min_value=0.0,max_value=67.1,value=1.0)
+DiabetesPedigreeFunction=st.number_input('feature_3',min_value=0.0,max_value=2.42,value=1.0)
 Age=st.number_input('feature_3',min_value=0,max_value=100)
 with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
+
