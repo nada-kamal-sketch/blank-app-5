@@ -2,6 +2,11 @@ import streamlit as st
 import pickle
 
 st.title("predicting diabetes")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+Pregnancies=st.number_input('feature_1',min_value=0,max_value=17)
+Glucose	=st.number_input('feature_2',min_value=0,max_value=200)
+BloodPressure=st.number_input('feature_3',min_value=0,max_value=122)
+SkinThickness=st.number_input('feature_3',min_value=0,max_value=99)
+Insulin=st.number_input('feature_3',min_value=0,max_value=846)
+BMI=st.number_input('feature_3',min_value=0.0,max_value=67.1)
+DiabetesPedigreeFunction=st.number_input('feature_3',min_value=0.0,max_value=2.42)
+Age=st.number_input('feature_3',min_value=0,max_value=100)
