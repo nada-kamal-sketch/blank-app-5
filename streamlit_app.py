@@ -17,5 +17,4 @@ with open('model.pkl', 'rb') as file:
     
 output = model.predict([[Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age]])
 
-st.write("the predict is : ",output[0][0])
 
