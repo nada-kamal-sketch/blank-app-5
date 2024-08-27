@@ -10,3 +10,5 @@ Insulin=st.number_input('feature_3',min_value=0,max_value=846)
 BMI=st.number_input('feature_3',min_value=0.0,max_value=67.1)
 DiabetesPedigreeFunction=st.number_input('feature_3',min_value=0.0,max_value=2.42)
 Age=st.number_input('feature_3',min_value=0,max_value=100)
+with open('model.pkl', 'rb') as file:
+    model = pickle.load(file)
