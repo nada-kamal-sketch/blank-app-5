@@ -15,6 +15,6 @@ Age=st.number_input('feature_3',min_value=0,max_value=100)
 with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
     
-output = model.predict([[Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age]])
+
 
 
