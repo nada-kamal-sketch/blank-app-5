@@ -16,7 +16,7 @@ with open('cl.pkl', 'rb') as file:
     model=pickle.load(file)
 
 output=model.predict([[Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age]])
-st.write("the predict is : ",output[0][0])
+st.write("the predict is : ",output[0])
     
 
 
