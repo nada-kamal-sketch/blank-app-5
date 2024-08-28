@@ -13,8 +13,9 @@ DiabetesPedigreeFunction=st.number_input('feature_3',min_value=0.0,max_value=2.4
 Age=st.number_input('feature_3',min_value=0,max_value=100)
 
 with open('cl.pkl', 'rb') as file:
-    model = pickle.load(file)
-output = model.predict([[Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age]])
+    model=pickle.load(file)
+
+output=model.predict([[Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age]])
 st.write("the predict is : ",output[0][0])
     
 
